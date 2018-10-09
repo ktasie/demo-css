@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
 * {
     box-sizing: border-box;
 }
@@ -25,12 +29,15 @@ body{
     left:0;
     padding:0.5rem 1rem;
     z-index:1;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
 }
 
-.main-header > div {
+/* .main-header > div {
     display:inline-block;
     vertical-align: middle;
-}
+} */
 
 .toggle-button {
     width: 3rem;
@@ -66,24 +73,27 @@ body{
     text-decoration: none;
     font-weight: bold;
     /* font-size: 1.3rem; */
-    height: 22px;
-    display: inline-block;
-    vertical-align: middle;
+    /* height: 22px; */
+    /* display: inline-block;
+    vertical-align: middle; */
 }
 
 .main-header__brand img {
-    height: 100%;
+    /* height: 100%; */
+    height: 22px;
+    vertical-align: middle;
 }
 .main-nav{
     display:none;
-    text-align: right;
+    /* text-align: right;
     width: calc(100% - 122px);
-    vertical-align: middle;
+    vertical-align: middle; */
 }
 
 @media (min-width: 40rem) {
     .main-nav {
-        display:inline-block;
+        /* display:inline-block; */
+        display:flex;
     }
 }
 
@@ -91,10 +101,11 @@ body{
     margin:0;
     padding: 0;
     list-style: none;
+    display:flex;
 }
 
 .main-nav__item{
-    display:inline-block;
+    /* display:inline-block; */
     margin:0 1rem;
 }
 
@@ -140,11 +151,21 @@ body{
     list-style: none;
     margin:0;
     padding: 0;
-    text-align: center;
+    /* text-align: center; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:40rem) {
+    .main-footer__links {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 .main-footer__link {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 0 1rem;
 }
 
@@ -173,9 +194,13 @@ body{
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: 0 auto;
     padding: 0;
-    text-align: center;
+    /* text-align: center; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .mobile-nav__item {
